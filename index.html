@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Idiot - Historia Interactiva</title>
+</head>
+<body>
+
+    <header>
+        <h1>American Idiot</h1>
+        <p>El viaje de un marginado en un mundo de caos.</p>
+    </header>
+
+    <figure>
+        <img src="assets/americanidiot.jpeg" alt="Portada del álbum American Idiot" width="500">
+        <figcaption>Bienvenido al Boulevard de los Sueños Rotos.</figcaption>
+    </figure>
+
+    <article>
+        <p>
+            Te encuentras al borde de la suburbia, mirando el camino hacia ninguna parte. 
+            Las luces de la ciudad te llaman, un canto de sirena de rebeldía y libertad. 
+            ¿Estás listo para dejarlo todo atrás?
+        </p>
+    </article>
+
+    <nav>
+        <ul>
+            <li><a href="paginas/pagina1.html">Caminar por el Boulevard de los Sueños Rotos</a></li>
+            <li><a href="paginas/pagina2.html">Unirte a la Rebelión de St. Jimmy</a></li>
+            <li><a href="paginas/pagina3.html">Quedarte y vivir el Sueño Americano</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Fechas de la Gira</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Ciudad</th>
+                    <th>Fecha</th>
+                    <th>Lugar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Los Ángeles</td>
+                    <td>15 de Marzo</td>
+                    <td>The Forum</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Nueva York</td>
+                    <td>10 de Abril</td>
+                    <td>Madison Square Garden</td>
+                </tr>
+                <tr>
+                    <td>11 de Abril</td>
+                    <td>Madison Square Garden</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Entradas disponibles bajo pedido.</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <section>
+        <h2>Contáctanos</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="feedback">Tu Opinión:</label>
+            <textarea id="feedback" name="feedback"></textarea><br>
+
+            <label>¿Eres un rebelde?</label><br>
+            <input type="radio" id="si" name="rebel" value="si">
+            <label for="si">Sí</label>
+
+            <input type="radio" id="no" name="rebel" value="no">
+            <label for="no">No</label><br>
+
+            <label>Unirse al boletín:</label>
+            <input type="checkbox" name="subscribe" value="yes"><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <audio controls>
+        <source src="assets/americanidiot.mp3" type="audio/mpeg">
+        Tu navegador no soporta el reproductor de audio.
+    </audio>
+
+    <footer>
+        <p>&copy; 2025 American Idiot Historia Interactiva por Pablo Cabrera 231156 uf uf </p>
+    </footer>
+
+</body>
+</html>
